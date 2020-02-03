@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Survey form</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Rokkitt&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1 id="title">Best Veggie-food Survey</h1>
+      <p id="description"> we want to find out which veggie meals make your heart happy</p>
+    </header>
+    <form id="survey-form">
+      <div class="form-container">
+        <label id="name-label" for="name"> Name</label>
+        <input type="text" name="name" id="name" class="form-style" placeholder="Please enter your name" required>
+      </div>
+      <div class="form-container">
+        <label id="mail-label" for="mail">Mail</label>
+        <input type="email" name="mail" id="mail" class="form-style" placeholder="Please enter your e-mail" required>
+      </div>
+
+      <div class="form-container">
+        <label id="number-label" for="number">How long have you been vegan?</label>
+        <input type="number" name="age" id="number" class="form-style" min="0" max="99" placeholder="Years">
+      </div>
+
+      <div class="form-container">
+        <p class="form-title">Choose your go to veggie meal</p>
+        <select id="dropdown" class="form-style" name="food" required>
+          <option>You can choose from here</option>
+          <option value="veggie-burguer">Veggie Burguer</option>
+          <option value="fries">French Fries</option>
+          <option value="roasted-coliflower">Roasted Coliflower</option>
+          <option value="veggie-sushi">Veggie Sushi</option>
+          <option value="breaded tofu">Breaded Tofu</option>
+          <option value="veggie-roasted">Roasted Veggies</option>
+          <option value="pasta-forno">Pasta al forno</option>
+          <option value="others">Other</option>
+        </select>
+
+      </div>
+
+      <div class="form-container">
+        <p > How much do you care about the quality of your food?</p>
+        <label for="so-much"><input type="radio" name="option" value="So much" class="radio-button"> So much </label>
+        <label for="yes"> <input type="radio" name="option" value="yes" class="radio-button"> Yes </label>
+        <label for="kind-of">  <input type="radio" name="option" value="kind-of" class="radio-button"> Kind of... </label>
+        <label for="not-much"><input type="radio" name="option" value="not much" class="radio-button"> Not much  </label>
+
+      </div>
+
+      <div class="form-container">
+        <p> Which healthy habits would you like to learn from us? </p>
+        <label for="vegan101"> <input type="checkbox" name="choises" value="vegan101" class="radio-button"> Vegan 101  </label>
+        <label for="recipes"> <input type="checkbox" name="choises" value="recipes" class="radio-button"> Recipes  </label>
+        <label for="mealprep">  <input type="checkbox" name="choises" value="mealprep" class="radio-button"> Meal prep </label>
+        <label for="green-living"> <input type="checkbox" name="choises" value="green-living" class="radio-button"> Going green  </label>
+      </div>
+
+<div class="form-container">
+  <p> We would love to read your thoughts </p>
+  <textarea name="thoughts" rows="10" cols="10"></textarea>
+</div>
+
+      <div class="form-container">
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+      </div>
+    </form>
+
+  </div>
+</body>
+
+</html>
